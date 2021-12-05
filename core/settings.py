@@ -167,6 +167,6 @@ AUTH_USER_MODEL = "users.NewUser"
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'kamrareena563@gmail.com'
-EMAIL_HOST_PASSWORD = 'Love@er0'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True

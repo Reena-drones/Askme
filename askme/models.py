@@ -29,6 +29,6 @@ class Answer(models.Model):
 def question_created_handler(sender, instance, created, *args, **kwargs):
     if created:
         print("send email to", instance.mentor.email)
-        # send_mail(f'Askme, Hi {instance.mentor} we have a question for you?', f'instance.question /n You can reply to this question on Askme app', instance.user,
-        #           [instance.mentor.email])
+        send_mail(f'Askme, Hi {instance.mentor} we have a question for you?', f'instance.question /n You can reply to this question on Askme app', instance.user,
+                  [instance.mentor.email])
     print("Hi", args, kwargs)
